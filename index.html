@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pizza Mania</title>
+    <meta name="author" content="Sikanderjit Singh" />
+    <meta name="description" content="Pizza ording website" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <img class="logo" src="logo.png" alt="">
+        <!-- brand name -->
+        <h1>Pizza Mania</h1>
+    </header>
+    <main>
+        <section>
+
+            <div class="quote">
+                <!-- quotation -->
+                <p>You can't buy Happiness but you can buy Pizza!</p>
+            </div>
+
+            <form id="pizzaOrder" action="pizza.php" method="get">
+                <fieldset>
+                    <legend>
+                        <!-- heading of pizza order menu -->
+                        <h2>Make your own Pizza!!</h2>
+                    </legend>
+                    <!-- choice between crusts -->
+                    <p id="crustChoice">Choose your crust</p>
+                    <div class="crusts">
+
+                        <div class="thickCrust">
+                            <!-- Options for the crusts -->
+                            <input type="radio" id="thickOpt" name="thickOpt" />
+                            <img src="thick crust.jpg" alt="thick crust">
+                            <label for="thickOpt">Thick Crust</label>
+                        </div>
+
+                        <div class="thinCrust">
+                            <input type="radio" id="thinOpt" name="thickOpt" />
+                            <img src="thin crust.jpg" alt="thin crust">
+                            <label for="thinOpt">Thin Crust</label>
+                        </div>
+
+                    </div>
+
+                    <!-- Shape of pizza -->
+                    <p id="shapeChoice">Choose the Shape of Pizza</p>
+                    <div class="shape">
+
+                        <div class="round">
+                            <input type="radio" name="shapeChoice" id="roundShape" />
+                            <img src="round pizza.jpg" alt="round pizza">
+                            <label for="roundShape">Round</label>
+                        </div>
+
+                        <div class="square">
+                            <input type="radio" name="shapeChoice" id="squareShape" />
+                            <img src="square pizza.jpg" alt="squareShape pizza">
+                            <label for="squareShape">Square</label>
+                        </div>
+
+                    </div>
+
+                    <!-- Toppings -->
+                    <p id="toppingChoice">Toppings</p>
+                    <div class="topping">
+                        <div class="onion">
+                            <input type="checkbox" name="onion" id="onion">
+
+                            <label for="onion">
+                                <img src="onion.jpg" alt="onion">
+                            </label>
+                            <label for="onion" id="OLabel">Onion</label>
+                        </div>
+                        <div class="pepperoni">
+                            <input type="checkbox" name="pepperoni" id="pepperoni">
+
+                            <label for="pepperoni">
+                                <img src="pepperoni.jpg" alt="pepperoni">
+                            </label>
+                            <label for="pepperoni" id="PLabel">Pepperoni</label>
+                        </div>
+                        <div class="blackOlives">
+                            <input type="checkbox" name="blackOlives" id="blackOlives">
+
+                            <label for="blackOlives">
+                                <img src="black olives.jpg" alt="black olives">
+                            </label>
+                            <label for="blackOlives" id="BLabel">Black Olives</label>
+                        </div>
+                        <div class="extraCheese">
+                            <input type="checkbox" name="extraCheese" id="extraCheese">
+
+                            <label for="extraCheese">
+                                <img src="extra cheese.jpg" alt="extra cheese">
+                            </label>
+                            <label for="extraCheese" id="ELabel">Extra Cheese</label>
+                        </div>
+                    </div>
+                </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    Details
+                </legend>
+                <div class="otherDetails">
+                    <!-- for number of pizzas -->
+                    <div class="Pizzacount">
+                        <label for="pizzaNumber">Number of Pizza:</label>
+                        <select name="pizzaNumber" id="pizzaNumber" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="slices">
+                        <label for="slices">Number of slices</label>
+                        <select name="slices" id="slices" required>
+                            <option value="4">4</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <!-- Contact details -->
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="phoneNumber">
+
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <!-- Eating preference -->
+                    <div class="eatingPrefrence">
+                        <label for="DineIn"> Dine In</label>
+                        <input type="radio" name="eatingPrefrence" id="DineIn" required>
+                        <label for="takeOut">Take Out</label>
+                        <input type="radio" name="eatingPrefrence" id="takeOut" required>
+                        <label for="delivery">Delivery</label>
+                        <input type="radio" name="eatingPrefrence" id="delivery" required>
+                    </div>
+                    <div class="address">
+                        <label for="address">Address:
+                        </label>
+                        <label for="ifDelivery" id="ifDelivery"> (if delivery)</label>
+                        <textarea name="address" id="address" cols="20" rows="5"></textarea>
+                    </div>
+
+
+                    <div class="buttons">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Bake!!">
+
+                    </div>
+            </fieldset>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p style="padding-left: 85px">
+            <small>
+                ©Pizza mania Inc. All rights are Researved and All images are taken from unsplash and pixabay.
+            </small>
+        </p>
+    </footer>
+
+</body>
+
+</html>

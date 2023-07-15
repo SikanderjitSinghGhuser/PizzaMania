@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    /* border: 2px solid red; */
+    line-height: 0px
+}
+
+/* for the logo */
+.logo {
+    width: 185px;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: block;
+    position: relative;
+    left: -87px;
+}
+
+/* for the main heading */
+h1 {
+    /* border: 2px solid red; */
+    margin: 0;
+    display: inline-block;
+    width: 93%;
+    text-align: center;
+    position: relative;
+    top: -43px;
+    left: 95px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 45px;
+}
+
+/* for the quotation */
+.quote p {
+    background-color: black;
+    color: #fabc21;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 39px;
+    font-style: italic;
+    border-radius: 92px;
+}
+
+/* heading of pizza ordering menu */
+/* heading Other details */
+main h2,
+legend {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: 20px auto;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 47px;
+    color: #872e00;
+
+}
+
+/* for making heading in center of legend */
+form legend {
+    margin: auto;
+}
+
+/* for the Choose the crusts */
+#crustChoice {
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    text-align: center;
+    color: #e83f0a;
+    margin-top: 0px;
+    /* border: 2px solid red; */
+}
+
+.crusts {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65%;
+    margin: auto;
+}
+
+/* div of crusts */
+.thickCrust,
+.thinCrust {
+    /* border: #fabc21 solid 2px; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* for image of crust */
+.thickCrust img,
+.thinCrust img {
+    width: 230px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+}
+
+/* for hover action */
+.thickCrust:hover,
+.thinCrust:hover {
+    opacity: 0.5;
+}
+
+/* For the radio button */
+#thickOpt,
+#thinOpt {
+    position: absolute;
+    opacity: 0;
+    width: 222px;
+    height: 227px;
+    /* border: 2px solid red; */
+    cursor: pointer;
+}
+
+/* for changing opacity on checked  of radio button*/
+#thickOpt:checked+img,
+#thinOpt:checked+img {
+    opacity: 0.5;
+}
+
+/* for the names of crusts */
+.crusts label {
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-top: 2px;
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+
+/* For the shape */
+#shapeChoice {
+    /* border: 2px solid red; */
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    text-align: center;
+    color: #e83f0a;
+}
+
+.shape {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    margin: auto;
+
+
+}
+
+.shape label {
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-top: 2px;
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-weight: 600;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.square,
+.round {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.square img,
+.round img {
+    width: 230px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+}
+
+/*for changing color of square and circle when hover  */
+.square:hover,
+.round:hover {
+    opacity: 0.5;
+
+}
+
+/* Defining actions of radio button */
+
+#squareShape,
+#roundShape {
+    position: absolute;
+    opacity: 0;
+    height: 222px;
+    width: 222px;
+    cursor: pointer;
+}
+
+/* for changing opacity of photo when selected */
+#squareShape:checked+img,
+#roundShape:checked+img {
+    opacity: 0.5;
+}
+
+/* for the toppings */
+#toppingChoice {
+    /* border: 2px solid red; */
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    text-align: center;
+    color: #e83f0a;
+}
+
+.topping {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 78%;
+    margin: auto;
+}
+
+.topping img {
+    width: 230px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    margin: 0 12px;
+}
+
+#pepperoni:checked+img,
+#onion:checked+img,
+#blackOlives:checked+img,
+#extraCheese:checked+img {
+    opacity: 0.5;
+}
+
+
+.topping img:hover {
+    opacity: 0.5;
+}
+
+.onion,
+.pepperoni,
+.blackOlives,
+.extraCheese {
+    display: flex;
+    flex-direction: column;
+}
+
+.topping input {
+    position: absolute;
+}
+
+#OLabel,
+#PLabel,
+#BLabel,
+#ELabel {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: auto;
+    margin-top: 2px;
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-weight: 600;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+/* for other details */
+fieldset {
+    border: 2px solid #b55625;
+    width: 87%;
+    margin: auto;
+}
+
+.otherDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 415px;
+    padding-left: 55px;
+}
+
+/* labels */
+
+.otherDetails label {
+    /* border: 2px solid red; */
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    color: #e83f0a;
+
+}
+
+.otherDetails select {
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    background-color: #eeebeb;
+    border: 0px;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: -1px;
+    width: 60px;
+    height: 31px;
+    border-radius: 15px;
+}
+
+[type=tel],
+[type=email],
+[type=text] {
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    width: 44%;
+    height: 36px;
+    background-color: #eeebeb;
+    border: 0px solid;
+    border-radius: 12px;
+
+}
+
+#takeOut,
+#delivery,
+#DineIn {
+    height: 21px;
+    width: 32px;
+}
+
+[type=tel]:hover,
+[type=email]:hover,
+[type=text]:hover {
+    background-color: #cfcbcb;
+}
+
+textarea:hover {
+    background-color: #cfcbcb;
+
+}
+
+.address label {
+    display: block;
+    float: left;
+    padding-right: 21px;
+}
+
+.address #ifDelivery {
+    /* border: 2px solid red; */
+    position: absolute;
+    font-size: 16px;
+    top: 44.2cm;
+}
+
+textarea {
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    background-color: #eeebeb;
+    border: 1px solid rgb(236, 230, 230);
+}
+
+
+
+[type=submit] {
+    border: 0px solid;
+    height: 47px;
+    width: 154px;
+    background: #63c134;
+    color: white;
+    border-radius: 37px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 32px;
+}
+
+[type=reset] {
+    border: 0px solid;
+    height: 47px;
+    width: 154px;
+    background: #eb2626;
+    color: white;
+    border-radius: 37px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 32px;
+
+}
+
+[type=submit]:hover {
+    background-color: rgb(8, 185, 8);
+}
+
+[type=reset]:hover {
+    background-color: #ec1414;
+}
+
+.buttons {
+    /* border: 2px solid red; */
+    display: flex;
+    padding-right: 40px;
+    justify-content: space-evenly;
+
+}
+
+[type=submit]:active {
+    background-color: rgb(1, 131, 1);
+}
+
+[type=reset]:active {
+    background-color: rgb(255, 0, 0);
+}
